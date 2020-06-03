@@ -1,2 +1,2 @@
 # 2017XXX	Subean Woo
-# Kookmin Univ, SW
+# Kookmin Univ, computer science
