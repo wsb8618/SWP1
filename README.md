@@ -1,2 +1,2 @@
-# 20171314	Subean Woo
+# 2017XXX	Subean Woo
 # Kookmin Univ, SW
