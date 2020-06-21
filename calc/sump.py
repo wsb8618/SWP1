@@ -5,8 +5,8 @@ def application(environ, start_response):
 	d = parse_qs(environ['QUERY_STRING'])
 	a = d.get('a', [''])[0]
 	b = d.get('b', [''])[0]
-	result1 = 0
-	result2 = 0
+	result1 = '' 
+	result2 = '' 
 	if '' not in [a, b]:
 		result1 = int(a) + int(b)
 		result2 = int(a) * int(b)
