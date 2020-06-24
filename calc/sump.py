@@ -7,9 +7,14 @@ def application(environ, start_response):
 	b = d.get('b', [''])[0]
 	result1 = '' 
 	result2 = '' 
-	if '' not in [a, b]:
-		result1 = int(a) + int(b)
-		result2 = int(a) * int(b)
+	try:
+		a, b = int(a), int(b)
+		result1 = a + b
+		result2 = a * b
+
+	except ValueError:
+		result1 = "Please input integer."
+		result2 = "Please input integer."
 
 	response_body = html % {
 		'result1' : result1,
